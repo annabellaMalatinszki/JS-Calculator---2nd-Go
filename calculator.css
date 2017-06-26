@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body, html {
+    box-sizing: border-box;
+    text-align: center;
+    background: white url("bluish.jpg") no-repeat fixed center/100%;
+}
+
+#container {
+    background-color: white;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 250px;
+    left: 250px;
+}
+
+#calculator {
+    margin: 50px 30px 10px 30px;
+    border-style: outset;
+    border-color: rgb(128, 166, 148);
+    border-width: 15px;
+    border-radius: 30px;
+    border-left: none;
+    border-top: none;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+input {
+    width: 650px;
+    height: 30px;
+    padding-top: 40px;
+    margin: auto;
+    padding-bottom: 20px;
+    border-style: outset;
+    border-top: none;
+    border-left: none;
+    border-width: 5px;
+    border-radius: 14px;
+    font-size: 48px;
+    text-align: right;
+    color: rgb(108, 166, 148);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+input:focus {
+    outline: none;
+}
+
+#buttons {
+    margin-top: 20px;
+    width: 550px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+}
+
+button {
+    width: 100px;
+    height: 80px;
+    background-color: white;
+    border: 0;
+    margin: 3px;
+    font-size: 48px;
+    color: rgb(99, 182, 184);
+    outline: none;
+}
+
+.number_button, .operator_button, .function_button {
+    display: inline-block;
+}
+
+.number_button {
+    background-color: rgb(66, 121, 122);
+    color: white;
+    border-style: outset;
+    border-width: 5px;
+    border-left: none;
+    border-top:none;
+    border-radius: 14px;
+}
+
+.number_button:active {
+    border-style: inset;
+    border-width: 5px;
+    border-radius: 14px;
+    border-left: none;
+    border-top: none;
+    
+}
+
+.operator_button, .function_button {
+    border-style: outset;
+    border-width: 5px;
+    border-radius: 14px;
+    border-left: none;
+    border-top: none;
+}
+
+.operator_button:active, .function_button:active {
+    border-style: inset;
+}
+
+#equal {
+    width: 200px;
+}
